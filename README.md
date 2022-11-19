@@ -30,6 +30,8 @@ Pada proyek ini, digunakan 3 model yakni:
 - Random Forest
 - XG Boost 
 
+Di setiap model pada saat pembuatan proyek ini menggunakan hyperparameters dan grid search untuk menemukan parameter terbaik yang digunakan pada modeling dalam machine learning.
+
 Dari ketiga model tersebut, memberikan hasil sebagai berikut: 
 ### Result 
 - Logistic Regression: 0.85
@@ -41,5 +43,5 @@ Untuk evaluasi pada proyek ini menggunakan **Confusion Matrix** dan **Classifica
 
 ## Summary
 Sekarang, dapat dihitung nilai value per prediction (EvP).
-EvP = FP cost * change in FP % + FN cost * change in FN %
+**EvP = FP cost * change in FP % + FN cost * change in FN %**
 Untuk xgboost model: EvP = 100 * .104 + 278.5 * .014 = $14.6 penghematan per pelanggan.
