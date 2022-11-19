@@ -23,3 +23,17 @@ Seorang manager di bank merasa terganggu dengan semakin banyaknya nasabah yang m
 - Normalize/scale features menggunakan robust scaler ntuk mempertahankan outlier relationships
 - Membagi training dan test menjadi 75/25 split
 - Oversample minor class pada training set untuk menyeimbangkan kelas
+
+## Modeling 
+Pada proyek ini, digunakan 3 model yakni:
+- Logistic Regression
+- Random Forest
+- XG Boost
+
+## Evaluation
+Untuk evaluasi pada proyek ini menggunakan **Confusion Matrix** dan **Classification Report**
+
+## Summary
+Sekarang, dapat dihitung nilai value per prediction (EvP).
+EvP = FP cost * change in FP % + FN cost * change in FN %
+Untuk xgboost model: EvP = 100 * .104 + 278.5 * .014 = $14.6 penghematan per pelanggan.
