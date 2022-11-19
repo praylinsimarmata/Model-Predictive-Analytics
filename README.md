@@ -28,7 +28,13 @@ Seorang manager di bank merasa terganggu dengan semakin banyaknya nasabah yang m
 Pada proyek ini, digunakan 3 model yakni:
 - Logistic Regression
 - Random Forest
-- XG Boost
+- XG Boost 
+
+Dari ketiga model tersebut, memberikan hasil sebagai berikut: 
+### Result 
+Logistic Regression: 0.85
+Random Forest: 0.96
+XGBoost: 0.97
 
 ## Evaluation
 Untuk evaluasi pada proyek ini menggunakan **Confusion Matrix** dan **Classification Report**
