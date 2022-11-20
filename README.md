@@ -11,7 +11,7 @@ Seorang manager di bank merasa terganggu dengan semakin banyaknya nasabah yang m
 ### Project Summary
 - Membangun model klasifikasi untuk memprediksi churn nasabah kartu kredit suatu bank.
 - Klasifikasi yang dilakukan menggunakan Optimized Linear Regression, Random Forest, and XGBoost.
-- Melakukan analisis ROI dengan mempertimbangkan customer lifetime value (LTV), nilai dari false positives/negatives, dan nilai dari dan intervensi untuk mempertahankan pelanggan.
+- Melakukan analisis ROI dengan mempertimbangkan LTV atau lifetime value of a customer, nilai dari false positives/negatives, dan nilai dari dan intervensi untuk mempertahankan pelanggan.
 
 ## Data Understanding
 - Dataset diperoleh dari Kaggle:: https://www.kaggle.com/sakshigoyal7/credit-card-customers
