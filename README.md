@@ -8,7 +8,7 @@ Bank Customer Churn adalah kehilangan pelanggan dari suatu bank. Churn dihitung 
 ### Problem Statements
 Seorang manager di bank merasa terganggu dengan semakin banyaknya nasabah yang meninggalkan layanan kartu kreditnya.Dan meminta bantuan agar dapat memprediksi pelanggan mana yang dapat diharapkan untuk berhenti sehingga bank tersebut dapat secara proaktif mengintervensi dan menawarkan layanan dan produk untuk mempertahankan pelanggan, dan pada akhirnya mencapai laba atas investasi yang positif bagi bank.
 
-### Project Summary
+### Goals / Project Summary
 - Membangun model klasifikasi untuk memprediksi churn nasabah kartu kredit suatu bank.
 - Klasifikasi yang dilakukan menggunakan Optimized Linear Regression, Random Forest, and XGBoost.
 - Melakukan analisis ROI dengan mempertimbangkan LTV atau lifetime value of a customer, nilai dari false positives/negatives, dan nilai dari dan intervensi untuk mempertahankan pelanggan.
