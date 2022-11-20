@@ -19,7 +19,7 @@ Seorang manager di bank merasa terganggu dengan semakin banyaknya nasabah yang m
 
 ### Exploratory Data Analysis
 #### Correlation heatmap:
-![images] (https://drive.google.com/file/d/11u-dY3Z4Y2tP8zGAgNUNyEqrsaZRdAP6/view?usp=share_link)
+![gambar](https://user-images.githubusercontent.com/99348807/202886627-e41b287a-15f3-4983-9f9e-7f99b1d8158d.jpg)
 
 ## Data Preparation / Data Preprocessing
 - Mengatasi missing values
