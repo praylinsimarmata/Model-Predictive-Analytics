@@ -1,7 +1,7 @@
 # Proyek Pertama : Predictive Analytics
 
 ## Domain Proyek
-Bank Customer Churn adalah kehilangan pelanggan dari suatu bank. Churn dihitung dari berapa banyak pelanggan meninggalkan suatu bank dalam waktu tertentu. Customer churn penting diketahui karena merupakan gambaran kesuksesan suatu bank dalam mempertahankan pelanggan. Bank Customer Churn penting untuk dihentikan, karena bank akan mengalami kerugian besar jika kehilangan pelanggannya. Dalam kasus ini, seorang manager di sebuah bank merasa terganggu dengan semakin banyaknya nasabah yang meninggalkan layanan kartu kreditnya. Dan meminta bantuan agar dapat memprediksi pelanggan mana yang dapat diharapkan untuk berhenti sehingga bank tersebut dapat secara proaktif mengintervensi dan menawarkan layanan dan produk untuk mempertahankan pelanggan, dan pada akhirnya mencapai laba atas investasi yang positif bagi bank.
+Bank Customer Churn adalah kehilangan pelanggan dari suatu bank. Churn dihitung dari berapa banyak pelanggan meninggalkan suatu bank dalam waktu tertentu. Bank Customer churn penting diketahui karena merupakan gambaran kesuksesan suatu bank dalam mempertahankan pelanggan. Selain itu, Bank Customer Churn penting untuk dihentikan, karena bank akan mengalami kerugian besar jika kehilangan pelanggannya. Dalam kasus ini, seorang manager di sebuah bank merasa terganggu dengan semakin banyaknya nasabah yang meninggalkan layanan kartu kreditnya. Dan meminta bantuan agar dapat memprediksi pelanggan mana yang dapat diharapkan untuk berhenti sehingga bank tersebut dapat secara proaktif mengintervensi dan menawarkan layanan dan produk untuk mempertahankan pelanggan, sehingga pada akhirnya dapat mencapai laba atas investasi yang positif bagi bank.
 
 ## Business Understanding
 
