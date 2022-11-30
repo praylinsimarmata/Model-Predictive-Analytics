@@ -15,7 +15,7 @@ Pernyataan masalah yang terdapat dalam proyek ini, yakni:
 ### Goals / Project Summary
 Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
 - Membangun model klasifikasi untuk memprediksi churn nasabah kartu kredit suatu bank.
-- Melalui hasil prediksi, bannk akan dapat memfokuskan promo kepada nasabah yang akan churn.
+- Melalui hasil prediksi, bank akan dapat memfokuskan promo kepada nasabah yang akan churn.
 - Klasifikasi yang dilakukan menggunakan *Optimized Linear Regression*.
 
 ## Data Understanding
