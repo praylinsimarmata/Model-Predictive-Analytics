@@ -65,11 +65,35 @@ Tiga variabel yang paling berkorelasi dengan respons adalah 'Total_Revolving_Bal
 ![gambar6](https://user-images.githubusercontent.com/99348807/204721062-12ee05f1-f209-43f0-8510-b692e4098c01.jpg)
 
 ## Data Preparation / Data Preprocessing
-- Mengatasi missing values
-- Mengubah fitur kategorikal menjadi dummies
-- Normalize/scale features menggunakan robust scaler untuk mempertahankan outlier relationships
-- Membagi dataset menjadi training dan test dengan perbandingan 75/25 split
-- Oversample minor class pada training set untuk menyeimbangkan kelas
+Pengolahan data dilakukan dalam beberapa tahap yakni: 
+- Tahap 1: Melakukan Load Data dan Menampilkan Data
+
+- ![gambar7](https://user-images.githubusercontent.com/99348807/204722878-31d756bd-6d77-4ac8-849d-91d7752e142c.jpg)
+
+- Tahap 2: Setelah data tampil, tahap selanjutnya ialah mengecek ketersediaan isi pada kolom, karena ketika ada missing kolom akan menyebabkan prediksi kurang optimal
+
+![gambar8](https://user-images.githubusercontent.com/99348807/204722961-5fcbe9ec-8935-4088-966e-0411e7069814.jpg)
+
+- Tahap 3: Melakukan Normalize/scale features menggunakan robust scaler untuk mempertahankan outlier relationships
+
+![gambar9](https://user-images.githubusercontent.com/99348807/204723003-3697a300-78f0-44c9-ba4a-a3182972b9bb.jpg)
+
+- Tahap 4: Membagi dataset menjadi training dan test dengan perbandingan 75/25 split, dengan menggunakan code dibawah ini:
+```
+from sklearn.model_selection import train_test_split
+
+X = X.drop(columns='y')
+x_train, x_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 12)
+x_train.shape
+```
+
+- Tahap 5: Oversample minor class pada training set untuk menyeimbangkan kelas, dengan menggunakan code dibawah ini:
+```
+from imblearn.over_sampling import SMOTE
+sm = SMOTE(random_state=12)
+x_train, y_train = sm.fit_resample(x_train, y_train)
+x_train.shape 
+```
 
 ## Modeling 
 Pada proyek ini, digunakan 3 model yakni:
