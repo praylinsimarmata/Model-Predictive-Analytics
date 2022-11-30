@@ -19,7 +19,7 @@ Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
 - Melakukan analisis ROI dengan mempertimbangkan LTV atau lifetime value of a customer, nilai dari false positives/negatives, dan nilai dari dan intervensi untuk mempertahankan pelanggan.
 
 ## Data Understanding
-- Dataset ini diperoleh dari Kaggle:: https://www.kaggle.com/sakshigoyal7/credit-card-customers
+- Dataset ini diperoleh dari Kaggle: https://www.kaggle.com/sakshigoyal7/credit-card-customers
 - Dataset ini menggambarkan perilaku pelanggan selama 12 bulan terakhir.
 
 Berikut fitur-fitur yang terdapat pada dataset dan deskripsinya:
