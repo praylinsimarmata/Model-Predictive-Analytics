@@ -97,7 +97,7 @@ Pengolahan data dilakukan dalam beberapa tahap yakni:
 - Tahap 6: Oversample minor class pada training set untuk menyeimbangkan kelas.
 
 ## Modeling 
-Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan Logistic Regression, Random Forest, dan juga XGBoost.
+Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan *Logistic Regression*, *Random Forest*, dan juga *XGBoost*.
 
 - **Logistic Regression** – Dasar untuk pemodelan
 
