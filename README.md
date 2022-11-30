@@ -54,12 +54,6 @@ Tiga variabel yang paling berkorelasi dengan respons adalah 'Total_Revolving_Bal
 
 ![gambar3](https://user-images.githubusercontent.com/99348807/204719862-82284263-ef17-4128-a15b-59c7b2d3aed8.jpg)
 
-- **Plot Total_Trans_Amt**
-
-![gambar4](https://user-images.githubusercontent.com/99348807/204720201-b498b71b-f9cb-4e04-a785-1aabbf7046ad.jpg)
-
-![gambar5](https://user-images.githubusercontent.com/99348807/204720208-451dbd19-82e1-4c84-a162-d0caaf2ba2d8.jpg)
-
 - **Rata-rata jumlah transaksi tahunan untuk churner dan non-churner**
 
 | y | Total_Trans_Amt | Months_on_book |
