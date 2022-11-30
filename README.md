@@ -14,7 +14,8 @@ Pernyataan masalah yang terdapat dalam proyek ini, yakni:
 
 ### Goals / Project Summary
 Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
-- Membangun model klasifikasi untuk memprediksi churn nasabah kartu kredit suatu bank, sehingga dapat memfokuskan promo kepada nasabah yang akan churn.
+- Membangun model klasifikasi untuk memprediksi churn nasabah kartu kredit suatu bank.
+- Melalui hasil prediksi, bannk akan dapat memfokuskan promo kepada nasabah yang akan churn.
 - Klasifikasi yang dilakukan menggunakan *Optimized Linear Regression*.
 
 ## Data Understanding
@@ -96,9 +97,10 @@ Pengolahan data dilakukan dalam beberapa tahap yakni:
 - Tahap 6: Oversample minor class pada training set untuk menyeimbangkan kelas.
 
 ## Modeling 
-Pada proyek ini, pemodelan dilakukan menggunakan algoritma *Logistic Regression*.
+Pada proyek ini, pemodelan dilakukan menggunakan algoritma *Logistic Regression*. 
 
 **Logistic Regression**
+*Logistic Regression* merupakan sebuah model yang digunakan untuk melakukan prediksi apakah sesuatu bernilai benar atau salah (0 atau 1). Dalam hal ini *Logistic Regression* digunakan untuk memprediksi apakah seorang nasabah akan melakukan churn atau tidak. *Logistic Regression* akan mengukur hubungan antara variabel target (yang ingin diprediksi) dan variabel input (fitur yang digunakan) dengan fungsi logistik. Probabilitas akan dihitung menggunakan fungsi *sigmoid* untuk mengubah nilai-nilai tadi menjadi 0 atau 1.
 
 Terdapat beberapa tahap dalam menggunakan algoritma ini, yakni:
 - Tahap 1: Melakukan Import Packages yaitu *Import* model *LogisticRegression* dari sklearn.linear_model dan *Import* modul metrik dari sklearn yang menyertakan metrik penting yang akan digunakan.
@@ -118,5 +120,8 @@ $F1 = 2 * {{(precision * recall)} \over (precision + recall)}$
 
 F1 sangat relevan untuk masalah ini karena terdapat dampak bisnis yang jelas dalam pertukaran antara presisi dan recall. Dan diperoleh hasil seperti di bawah ini:
 
-![gambar15](https://user-images.githubusercontent.com/99348807/204864712-e012425e-c0eb-490c-9394-4bbdf948df06.jpg)
-
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| accuracy     |           |        | 0.85     | 2532    |
+| macro avg    | 0.74      | 0.84   | 0.77     | 2532    |
+| weighted avg | 0.89      | 0.85   | 0.87     | 2532    |
