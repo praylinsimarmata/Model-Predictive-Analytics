@@ -113,7 +113,7 @@ Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan Logistic Regression, Ra
 
 - Logistic Regression – Dasar untuk pemodelan
 
-Pada proyek ini, model yang pertama dibuat ialah model Logistic Regression. Pada pembuatan model ini digunakan RandomForestClassifier() yang disimpan dalam variabel reg. Model ini juga menggunakan hyperparameters dan juga grid search untuk menemukan parameter terbaik yang akan digunakan saat modeling. Pertama hyperparameters didefinisikan terlebih dahulu, kemudian dipanggil pada variabel grid. Setelah itu, model dilatih pada variabel fit. 
+Pada proyek ini, model yang pertama dibuat ialah model Logistic Regression. Pada pembuatan model ini digunakan RandomForestClassifier() yang disimpan dalam variabel reg. Model ini juga menggunakan hyperparameters dan juga grid search untuk menemukan parameter terbaik yang akan digunakan saat modeling. Langkahnya ialah pertama hyperparameters didefinisikan terlebih dahulu, kemudian dipanggil pada variabel grid. Setelah itu, model dilatih pada variabel fit. 
 
 ![gambar10](https://user-images.githubusercontent.com/99348807/204727721-7ef81e1f-722d-4045-bbf5-550e504c4096.jpg)
 
