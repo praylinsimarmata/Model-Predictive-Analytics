@@ -91,7 +91,7 @@ Pengolahan data dilakukan dalam beberapa tahap yakni:
 - Tahap 5: Oversample minor class pada training set untuk menyeimbangkan kelas.
 
 ## Modeling 
-Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan Logistic Regression, Random Forest, dan juga XG Boost.
+Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan Logistic Regression, Random Forest, dan juga XGBoost.
 
 - **Logistic Regression** – Dasar untuk pemodelan
 
@@ -103,7 +103,7 @@ Model yang kedua dibuat pada proyek ini ialah Random Forest. Tidak jauh beda den
 
 - **XGBoost** – Teknik peningkatan gradien adalah teknik aditif (ensemble) yang membangun satu pohon pada satu waktu, belajar dari iterasi sebelumnya. 
 
-Model terakhir yang dibuat pada proyek ini ialah XGBoost. Mirip seperti model yang sebelumnya, pada model ini kita menggunakan XGBClassifier() yang disimpan dalam variabel xgb. Model ini juga menggunakan hyperparameters dan juga grid search sama seperti model sebelumnya, hanya saja hyperparameter yang digunakan berbeda. Setelah hyperparameters didefinisikan, kemudian dipanggil pada variabel grid. Lalu model dilatih pada dengan menjalankan perintah fit.
+Model terakhir yang dibuat pada proyek ini ialah XGBoost. Mirip seperti model yang sebelumnya, pada model ini kita menggunakan XGBClassifier() yang disimpan dalam variabel xgb. Model ini juga menggunakan hyperparameters dan juga grid search sama seperti model sebelumnya, hanya saja hyperparameter yang digunakan berbeda. Setelah hyperparameters didefinisikan, kemudian dipanggil pada variabel grid. Lalu model dilatih dengan menjalankan perintah fit.
 
 ## Evaluation
 Evaluasi yang dilakukan dalam proyek ini menggunakan F1 Score metric. F1 Score metric dapat diartikan sebagai rata-rata tertimbang dari presisi dan recall, dimana skor F1 mencapai nilai terbaiknya pada 1 dan skor terburuk pada 0. Kontribusi relatif presisi dan recall terhadap skor F1 adalah sama. Rumus untuk skor F1 ialah:
