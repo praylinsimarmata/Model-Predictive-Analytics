@@ -125,13 +125,11 @@ Model yang kedua dibuat pada proyek ini ialah Random Forest. Tidak jauh beda den
 
 - **XGBoost** – Teknik peningkatan gradien adalah teknik aditif (ensemble) yang membangun satu pohon pada satu waktu, belajar dari iterasi sebelumnya. 
 
-Model terakhir yang dibuat pada proyek ini ialah XGBoost. Mirip seperti model yang sebelumnya, pada model ini kita menggunakan XGBClassifier() yang disimpan dalam variabel xgb. Model ini juga menggunakan hyperparameters dan juga grid search sama seperti model sebelumnya, hanya saja hyperparameter yang digunakan berbeda. Setelah hyperparameters didefinisikan, kemudian dipanggil pada variabel grid. Lalu model dilatih pada variabel fit.
+Model terakhir yang dibuat pada proyek ini ialah XGBoost. Mirip seperti model yang sebelumnya, pada model ini kita menggunakan XGBClassifier() yang disimpan dalam variabel xgb. Model ini juga menggunakan hyperparameters dan juga grid search sama seperti model sebelumnya, hanya saja hyperparameter yang digunakan berbeda. Setelah hyperparameters didefinisikan, kemudian dipanggil pada variabel grid. Lalu model dilatih pada dengan menjalankan perintah fit.
 
 ![gambar12](https://user-images.githubusercontent.com/99348807/204727718-e97fed87-8d49-455f-9311-9e1e5edacc30.jpg)
 
 ![gambar13](https://user-images.githubusercontent.com/99348807/204727726-30c24a8f-301f-4832-82b6-85d844be9e11.jpg)
-
-Di setiap model yang dibuat pada proyek ini menggunakan hyperparameters dan grid search untuk menemukan parameter terbaik yang digunakan akan pada modeling dalam machine learning.
 
 ## Evaluation
 Evaluasi yang dilakukan dalam proyek ini menggunakan F1 Score metric. F1 Score metric dapat diartikan sebagai rata-rata tertimbang dari presisi dan recall, dimana skor F1 mencapai nilai terbaiknya pada 1 dan skor terburuk pada 0. Kontribusi relatif presisi dan recall terhadap skor F1 adalah sama. Rumus untuk skor F1 ialah:
