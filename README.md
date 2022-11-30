@@ -65,7 +65,9 @@ Tiga variabel yang paling berkorelasi dengan respons adalah 'Total_Revolving_Bal
 Pengolahan data dilakukan dalam beberapa tahap yakni: 
 - Tahap 1: Melakukan Load Data dan Menampilkan Data.
 
-- Tahap 2: Setelah data tampil, tahap selanjutnya ialah mengecek ketersediaan isi pada kolom, karena ketika ada missing kolom akan menyebabkan prediksi kurang optimal. Dan pada dataset ini, kita tidak menemukan missing values.
+- Tahap 2 : Menampilkan informasi data dengan menggunakan df.info() untuk melihat jenis data, ketersediaan data setiap kolom, dan jenis jenis colom. Kemudian menggunakan df.describe() untuk mengetahui persebaran data.
+
+- Tahap 3: Setelah data tampil, tahap selanjutnya ialah mengecek ketersediaan isi pada kolom, karena ketika ada missing kolom akan menyebabkan prediksi kurang optimal. Dan pada dataset ini, kita tidak menemukan missing values.
 
 | Kolom                    | Total Kosong |
 |--------------------------|--------------|
@@ -84,11 +86,11 @@ Pengolahan data dilakukan dalam beberapa tahap yakni:
 | Total_Ct_Chng_Q4_Q       |       0      |
 | Avg_Utilization_Ratio    |       0      |
 
-- Tahap 3: Melakukan Normalize/scale features menggunakan robust scaler untuk mempertahankan hubungan outlier.
+- Tahap 4: Melakukan Normalize/scale features menggunakan robust scaler untuk mempertahankan hubungan outlier.
 
-- Tahap 4: Membagi dataset menjadi training dan test dengan perbandingan 75/25 split.
+- Tahap 5: Membagi dataset menjadi training dan test dengan perbandingan 75/25 split.
 
-- Tahap 5: Oversample minor class pada training set untuk menyeimbangkan kelas.
+- Tahap 6: Oversample minor class pada training set untuk menyeimbangkan kelas.
 
 ## Modeling 
 Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan Logistic Regression, Random Forest, dan juga XGBoost.
