@@ -90,11 +90,11 @@ Pengolahan data dilakukan dalam beberapa tahap yakni:
 | Total_Ct_Chng_Q4_Q       |       0      |
 | Avg_Utilization_Ratio    |       0      |
 
-- Tahap 3: Melakukan Normalize/scale features menggunakan robust scaler untuk mempertahankan hubungan outlier
+- Tahap 3: Melakukan Normalize/scale features menggunakan robust scaler untuk mempertahankan hubungan outlier.
 
-- Tahap 4: Membagi dataset menjadi training dan test dengan perbandingan 75/25 split, dengan menggunakan code dibawah ini:
+- Tahap 4: Membagi dataset menjadi training dan test dengan perbandingan 75/25 split.
 
-- Tahap 5: Oversample minor class pada training set untuk menyeimbangkan kelas, dengan menggunakan code dibawah ini:
+- Tahap 5: Oversample minor class pada training set untuk menyeimbangkan kelas.
 
 ## Modeling 
 Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan Logistic Regression, Random Forest, dan juga XG Boost.
