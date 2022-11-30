@@ -8,9 +8,9 @@ Seorang manajer di bank merasa terganggu dengan semakin banyaknya nasabah yang m
 
 ### Problem Statements
 Pernyataan masalah yang terdapat dalam proyek ini, yakni:
-- Adanya pelanggan yang meninggalkan layanan kartu kreditnya
-- Menarik kembali pelanggan yang ingin berhenti
-- Bagaimana caranya agar dapat mencapai laba atas investasi yang positif bagi bank
+- Adanya pelanggan yang meninggalkan layanan kartu kreditnya.
+- Menarik kembali pelanggan yang ingin berhenti.
+- Bagaimana caranya agar dapat mencapai laba atas investasi yang positif bagi bank.
 
 ### Goals / Project Summary
 Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
