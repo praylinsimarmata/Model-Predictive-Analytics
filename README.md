@@ -68,13 +68,13 @@ Tiga variabel yang paling berkorelasi dengan respons adalah 'Total_Revolving_Bal
 Pengolahan data dilakukan dalam beberapa tahap yakni: 
 - Tahap 1: Melakukan Load Data dan Menampilkan Data
 
-- ![gambar7](https://user-images.githubusercontent.com/99348807/204722878-31d756bd-6d77-4ac8-849d-91d7752e142c.jpg)
+![gambar7](https://user-images.githubusercontent.com/99348807/204722878-31d756bd-6d77-4ac8-849d-91d7752e142c.jpg)
 
 - Tahap 2: Setelah data tampil, tahap selanjutnya ialah mengecek ketersediaan isi pada kolom, karena ketika ada missing kolom akan menyebabkan prediksi kurang optimal
 
 ![gambar8](https://user-images.githubusercontent.com/99348807/204722961-5fcbe9ec-8935-4088-966e-0411e7069814.jpg)
 
-- Tahap 3: Melakukan Normalize/scale features menggunakan robust scaler untuk mempertahankan outlier relationships
+- Tahap 3: Melakukan Normalize/scale features menggunakan robust scaler untuk mempertahankan hubungan outlier
 
 ![gambar9](https://user-images.githubusercontent.com/99348807/204723003-3697a300-78f0-44c9-ba4a-a3182972b9bb.jpg)
 
@@ -96,12 +96,20 @@ x_train.shape
 ```
 
 ## Modeling 
-Pada proyek ini, digunakan 3 model yakni:
-- Logistic Regression
-- Random Forest
-- XG Boost 
+Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan Logistic Regression, Random Forest, dan juga XG Boost.
+
+- Logistic Regression – Dasar untuk pemodelan
+- Random Forest – Metode ansambel pohon keputusan, metode non-parametrik yang dapat bekerja lebih baik karena hubungan yang kompleks antara prediktor dan hasil.
+- XGBoost – Teknik peningkatan gradien adalah teknik aditif (ensemble) yang membangun satu pohon pada satu waktu, belajar dari iterasi sebelumnya. 
 
 Di setiap model yang dibuat pada proyek ini menggunakan hyperparameters dan grid search untuk menemukan parameter terbaik yang digunakan akan pada modeling dalam machine learning.
+
+## Evaluation
+Evaluasi yang dilakukan dalam proyek ini menggunakan F1 Score metric. F1 Score metric dapat diartikan sebagai rata-rata tertimbang dari presisi dan recall, dimana skor F1 mencapai nilai terbaiknya pada 1 dan skor terburuk pada 0. Kontribusi relatif presisi dan recall terhadap skor F1 adalah sama. Rumus untuk skor F1 ialah:
+```
+F1 = 2 * (precision * recall) / (precision + recall)
+```
+F1 sangat relevan untuk masalah ini karena terdapat dampak bisnis yang jelas dalam pertukaran antara presisi dan daya ingat. Metriks inilah yang digunakan untuk melakukan analisis ROI.
 
 Dari ketiga model tersebut, didapat hasil sebagai berikut: 
 ### Result 
@@ -109,16 +117,4 @@ Dari ketiga model tersebut, didapat hasil sebagai berikut:
 - Random Forest: 0.96
 - XGBoost: 0.97
 
-## Evaluation
-Untuk evaluasi pada proyek ini menggunakan **Confusion Matrix** dan **Classification Report.** Yang mana di dalam _confusion matrix_ terdapat nilai FP yang nantinya digunakan dalam perhitungan EvP.
-
-## Summary
-Sekarang, dapat dihitung nilai value per prediction (EvP) untuk membandingkan model xgboost dengan model logistic regression.
-
-- False Positive (FP) = $100 (asumsi biaya penawaran insentif kepada pelanggan untuk mencegah churn)
-- False Negative (FN) = $278.5 (nilai dari LTV atau lifetime value of a customer)
-
-**EvP = FP * selisih FP % + FN * selisih FN %**
-
-Untuk xgboost model
-EvP = 100 * .104 + 278.5 * .014 = $14.6 penghematan per pelanggan.
+Dari hasil tersebut kita dapat mengetahui bahwa model yang paling baik ialah dengan menggunakan XGBoost.
