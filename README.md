@@ -16,7 +16,7 @@ Pernyataan masalah yang terdapat dalam proyek ini, yakni:
 Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
 - Membangun model klasifikasi untuk memprediksi churn nasabah kartu kredit suatu bank.
 - Klasifikasi yang dilakukan menggunakan Optimized Linear Regression, Random Forest, and XGBoost.
-- Melakukan analisis ROI dengan mempertimbangkan LTV atau lifetime value of a customer, nilai dari false positives/negatives, dan nilai dari dan intervensi untuk mempertahankan pelanggan.
+- Menentukan model terbaik yang akan digunakan.
 
 ## Data Understanding
 - Dataset ini diperoleh dari Kaggle: https://www.kaggle.com/sakshigoyal7/credit-card-customers
@@ -99,8 +99,18 @@ x_train.shape
 Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan Logistic Regression, Random Forest, dan juga XG Boost.
 
 - Logistic Regression – Dasar untuk pemodelan
+
+![gambar11](https://user-images.githubusercontent.com/99348807/204727710-fbd39707-c4d0-4e69-9cfb-ae6cea56e9e1.jpg)
+
 - Random Forest – Metode ansambel pohon keputusan, metode non-parametrik yang dapat bekerja lebih baik karena hubungan yang kompleks antara prediktor dan hasil.
+
+![gambar12](https://user-images.githubusercontent.com/99348807/204727718-e97fed87-8d49-455f-9311-9e1e5edacc30.jpg)
+
 - XGBoost – Teknik peningkatan gradien adalah teknik aditif (ensemble) yang membangun satu pohon pada satu waktu, belajar dari iterasi sebelumnya. 
+
+![gambar10](https://user-images.githubusercontent.com/99348807/204727721-7ef81e1f-722d-4045-bbf5-550e504c4096.jpg)
+
+![gambar13](https://user-images.githubusercontent.com/99348807/204727726-30c24a8f-301f-4832-82b6-85d844be9e11.jpg)
 
 Di setiap model yang dibuat pada proyek ini menggunakan hyperparameters dan grid search untuk menemukan parameter terbaik yang digunakan akan pada modeling dalam machine learning.
 
@@ -109,7 +119,7 @@ Evaluasi yang dilakukan dalam proyek ini menggunakan F1 Score metric. F1 Score m
 ```
 F1 = 2 * (precision * recall) / (precision + recall)
 ```
-F1 sangat relevan untuk masalah ini karena terdapat dampak bisnis yang jelas dalam pertukaran antara presisi dan daya ingat. Metriks inilah yang digunakan untuk melakukan analisis ROI.
+F1 sangat relevan untuk masalah ini karena terdapat dampak bisnis yang jelas dalam pertukaran antara presisi dan recall. Metriks inilah yang digunakan untuk melakukan analisis ROI.
 
 Dari ketiga model tersebut, didapat hasil sebagai berikut: 
 ### Result 
