@@ -46,7 +46,7 @@ Tiga variabel yang paling berkorelasi dengan respons adalah 'Total_Revolving_Bal
 
 ![gambar1](https://user-images.githubusercontent.com/99348807/204719501-41b9edd6-42bd-48de-b5bf-1efa827b5299.jpg)
 
-- **Pairplot**
+- **Pairplot dari ketiga variabel di atas**
 
 ![gambar2](https://user-images.githubusercontent.com/99348807/204719738-d8e405f7-ff34-45b6-874f-56948f4ac496.jpg)
 
