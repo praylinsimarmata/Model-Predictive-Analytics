@@ -14,9 +14,8 @@ Pernyataan masalah yang terdapat dalam proyek ini, yakni:
 
 ### Goals / Project Summary
 Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
-- Membangun model klasifikasi untuk memprediksi churn nasabah kartu kredit suatu bank.
+- Membangun model klasifikasi untuk memprediksi churn nasabah kartu kredit suatu bank, sehingga dapat memfokuskan promo kepada nasabah yang akan churn.
 - Klasifikasi yang dilakukan menggunakan *Optimized Linear Regression*.
-- Memperoleh hasil akurasi yang baik.
 
 ## Data Understanding
 - Dataset ini diperoleh dari Kaggle: https://www.kaggle.com/sakshigoyal7/credit-card-customers
@@ -103,17 +102,21 @@ Pada proyek ini, pemodelan dilakukan menggunakan algoritma *Logistic Regression*
 
 Terdapat beberapa tahap dalam menggunakan algoritma ini, yakni:
 - Tahap 1: Melakukan Import Packages yaitu *Import* model LogisticRegression dari sklearn.linear_model dan *Import* modul metrik dari sklearn yang menyertakan metrik penting yang akan digunakan.
-- Tahap 2: Melakukan pelatihan model, dengan menggunakan variabel reg yang menampung logistic regression. Selain itu, dilakukan, penilaian pada akurasi pelatihan model.
-- Tahap 3: Melakukan testing pada model serta penilaian terhadap akurasi testing model.
-- Tahap 4: 
+- Tahap 2: Melakukan pelatihan model, dengan menggunakan variabel reg yang menampung logistic regression. Selain itu, dilakukan penilaian pada akurasi pelatihan model dan mendapat hasil 86.99%.
+- Tahap 3: Melakukan testing pada model serta penilaian terhadap akurasi testing model dan mendapat hasil 85.27%.
+- Tahap 4: Untuk mengukur performa model dalam melakukan prediksi juga digunakan confusion matrix
 
+![gambar14](https://user-images.githubusercontent.com/99348807/204863209-6ea1def6-f87c-4bf4-b806-1901d286efc7.jpg)
 
+Untuk kasus ini targetnya adalah:
+- Existing Customer
+- Attrited Customer
 
 ## Evaluation
 Evaluasi yang dilakukan dalam proyek ini menggunakan *F1 Score metric*. *F1 Score metric* dapat diartikan sebagai rata-rata tertimbang dari presisi dan *recall*, dimana skor F1 mencapai nilai terbaiknya pada 1 dan skor terburuk pada 0. Kontribusi relatif presisi dan *recall* terhadap skor F1 adalah sama. Rumus untuk skor F1 ialah:
 $F1 = 2 * {{(precision * recall)} \over (precision + recall)}$
 
-F1 sangat relevan untuk masalah ini karena terdapat dampak bisnis yang jelas dalam pertukaran antara presisi dan recall.
+F1 sangat relevan untuk masalah ini karena terdapat dampak bisnis yang jelas dalam pertukaran antara presisi dan recall. Dan diperoleh hasil seperti di bawah ini:
 
-### Conclusion
+![gambar15](https://user-images.githubusercontent.com/99348807/204864712-e012425e-c0eb-490c-9394-4bbdf948df06.jpg)
 
