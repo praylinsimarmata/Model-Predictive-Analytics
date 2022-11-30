@@ -69,7 +69,7 @@ Tiga variabel yang paling berkorelasi dengan respons adalah 'Total_Revolving_Bal
 
 ## Data Preparation / Data Preprocessing
 Pengolahan data dilakukan dalam beberapa tahap yakni: 
-- Tahap 1: Melakukan Load Data dan Menampilkan Data
+- Tahap 1: Melakukan Load Data dan Menampilkan Data.
 
 - Tahap 2: Setelah data tampil, tahap selanjutnya ialah mengecek ketersediaan isi pada kolom, karena ketika ada missing kolom akan menyebabkan prediksi kurang optimal. Dan pada dataset ini, kita tidak menemukan missing values.
 
