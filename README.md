@@ -39,8 +39,26 @@ Berikut fitur-fitur yang terdapat pada dataset dan deskripsinya:
 - Avg_Utilization_Ratio: Rasio Pemanfaatan Kartu Rata-Rata
 
 ### Exploratory Data Analysis
-#### Correlation heatmap:
-![gambar](https://user-images.githubusercontent.com/99348807/202886627-e41b287a-15f3-4983-9f9e-7f99b1d8158d.jpg)
+
+- **Correlation heatmap**:
+
+Tiga variabel yang paling berkorelasi dengan respons adalah 'Total_Revolving_Bal', 'Total_Trans_Ct', dan 'Total_Ct_Chng_Q4_Q1'. Masing-masing prediktor tersebut memiliki korelasi negatif > 0,2 dengan variabel respon 'y'.
+
+![gambar1](https://user-images.githubusercontent.com/99348807/204719501-41b9edd6-42bd-48de-b5bf-1efa827b5299.jpg)
+
+- **Pairplot**
+
+![gambar2](https://user-images.githubusercontent.com/99348807/204719738-d8e405f7-ff34-45b6-874f-56948f4ac496.jpg)
+
+- **Plot fitur yang paling berkorelasi terhadap variabel y**
+
+![gambar3](https://user-images.githubusercontent.com/99348807/204719862-82284263-ef17-4128-a15b-59c7b2d3aed8.jpg)
+
+- **Plot Total_Trans_Amt**
+
+![gambar4](https://user-images.githubusercontent.com/99348807/204720201-b498b71b-f9cb-4e04-a785-1aabbf7046ad.jpg)
+
+![gambar5](https://user-images.githubusercontent.com/99348807/204720208-451dbd19-82e1-4c84-a162-d0caaf2ba2d8.jpg)
 
 ## Data Preparation / Data Preprocessing
 - Mengatasi missing values
