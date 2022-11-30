@@ -101,32 +101,32 @@ Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan *Logistic Regression*, 
 
 - **Logistic Regression** – Dasar untuk pemodelan
 
-Pada proyek ini, model yang pertama dibuat ialah model *Logistic Regression*. Pada pembuatan model ini digunakan RandomForestClassifier() yang disimpan dalam variabel reg. Model ini juga menggunakan *hyperparameters* dan juga *grid search* untuk menemukan parameter terbaik yang akan digunakan saat modeling. Langkahnya ialah pertama *hyperparameters* didefinisikan terlebih dahulu. *Hyperparameters* didefenisikan sebagai berikut:
+Pada proyek ini, model yang pertama dibuat ialah model *Logistic Regression*. *Logistic Regression* ialah salah satu jenis pemodelan yang digunakan untuk melakukan prediksi apakah sesuatu bernilai benar atau salah. Dalam hal ini kita ingin melakukan prediksi apakah seorang pelanggan akan melakukan churn atau tidak. Algoritma ini bekerja dengan cara menjalankan fungsi LogisticRegression() serta *hyperparameters* yang ditampung di dalam *grid search*. *GridSearch* akan melakukan validasi terhadap model dan juga *hyperparameters* masing-masing secara otomatis dan sistematis. Dalam algoritma ini, *Hyperparameters* yang digunakan ialah:
 ```
 solvers = ['newton-cg','lbfgs','liblinear']
 penalty = ['l1','l2']
 c = [100,10,1,.1,.01]
 ```
-Kemudian dipanggil pada variabel *grid*. Setelah itu, model akan dilatih menggunakan grid_search.fit.
+Dengan menggunakan *GridSearch* nantinya akan dipilih parameter yang terbaik yang akan digunakan dan akan dilatih menggunakan grid_search.fit.
 
 - **Random Forest** – Metode ansambel pohon keputusan, metode non-parametrik yang dapat bekerja lebih baik karena hubungan yang kompleks antara prediktor dan hasil.
 
-Model yang kedua dibuat pada proyek ini ialah *Random Forest*. Tidak jauh beda dengan model yang pertama, kita menggunakan RandomForestClassifier() yang disimpan dalam sebuah variabel bernama rf. Model ini juga menggunakan *hyperparameters* dan juga *grid search* sama seperti model sebelumnya, hanya saja *hyperparameters* yang digunakan berbeda. *Hyperparameters* yang didefenisikan pada model ini ialah:
+Model yang kedua dibuat pada proyek ini ialah *Random Forest*. *Random Forest* merupakan salah satu algoritma dalam *Decision Tree* yang nantinya algoritma ini akan melakukan prediksi apakah seorang pelanggan akan melakukan churn atau tidak. Algoritma ini bekerja dengan cara menjalankan fungsi RandomForestClassifier() serta *hyperparameters* yang ditampung di dalam *grid search*. *GridSearch* akan melakukan validasi terhadap model dan juga *hyperparameters* masing-masing secara otomatis dan sistematis. Dalam algoritma ini, *Hyperparameters* yang digunakan ialah:
 ```
 n_estimators = [10,100,1000]
 max_features = ['sqrt','log2']
 ```
-Setelah *hyperparameters* didefinisikan, kemudian dipanggil pada variabel *grid*. Lalu model dilatih menggunakan grid_search.fit.
+Dengan menggunakan *GridSearch* nantinya akan dipilih parameter yang terbaik yang akan digunakan dan akan dilatih menggunakan grid_search.fit.
 
 - **XGBoost** – Teknik peningkatan gradien adalah teknik aditif (ensemble) yang membangun satu pohon pada satu waktu, belajar dari iterasi sebelumnya. 
 
-Model terakhir yang dibuat pada proyek ini ialah *XGBoost*. Mirip seperti model yang sebelumnya, pada model ini kita menggunakan XGBClassifier() yang disimpan dalam variabel xgb. Model ini juga menggunakan *hyperparameters* dan juga *grid search* sama seperti model sebelumnya, hanya saja *hyperparameters* yang digunakan berbeda. *Hyperparameters* yang didefenisikan pada model ini ialah:
+Model terakhir yang dibuat pada proyek ini ialah *XGBoost*. Algoritma ini bekerja dengan cara menjalankan fungsi XGBClassifier() serta *hyperparameters* yang ditampung di dalam *grid search*. *GridSearch* akan melakukan validasi terhadap model dan juga *hyperparameters* masing-masing secara otomatis dan sistematis. Dalam algoritma ini, *Hyperparameters* yang digunakan ialah:
 ```
 eta = [.1,.4,.7,1]
 min_child_weight = [3,6,10]
 max_depth = [.1,1,5,10]
 ```
-Setelah *hyperparameters* didefinisikan, kemudian dipanggil pada variabel *grid*. Lalu model dilatih menggunakan grid_search.fit.
+Setelah *hyperparameters* didefinisikan, kemudian dipanggil pada variabel *grid*. Lalu model dilatih menggunakan grid_search.fit. Algortitma XGBoost ini menggunakan proses pra-filter dan berbasis histogram untuk menemukan nilai pemisah terbaik.
 
 ## Evaluation
 Evaluasi yang dilakukan dalam proyek ini menggunakan *F1 Score metric*. *F1 Score metric* dapat diartikan sebagai rata-rata tertimbang dari presisi dan *recall*, dimana skor F1 mencapai nilai terbaiknya pada 1 dan skor terburuk pada 0. Kontribusi relatif presisi dan *recall* terhadap skor F1 adalah sama. Rumus untuk skor F1 ialah:
