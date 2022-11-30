@@ -101,13 +101,13 @@ Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan *Logistic Regression*, 
 
 - **Logistic Regression** – Dasar untuk pemodelan
 
-Pada proyek ini, model yang pertama dibuat ialah model *Logistic Regression*. Pada pembuatan model ini digunakan RandomForestClassifier() yang disimpan dalam variabel reg. Model ini juga menggunakan hyperparameters dan juga *grid search* untuk menemukan parameter terbaik yang akan digunakan saat modeling. Langkahnya ialah pertama *hyperparameters* didefinisikan terlebih dahulu. *Hyperparameters* didefenisikan sebagai berikut:
+Pada proyek ini, model yang pertama dibuat ialah model *Logistic Regression*. Pada pembuatan model ini digunakan RandomForestClassifier() yang disimpan dalam variabel reg. Model ini juga menggunakan *hyperparameters* dan juga *grid search* untuk menemukan parameter terbaik yang akan digunakan saat modeling. Langkahnya ialah pertama *hyperparameters* didefinisikan terlebih dahulu. *Hyperparameters* didefenisikan sebagai berikut:
 ```
 solvers = ['newton-cg','lbfgs','liblinear']
 penalty = ['l1','l2']
 c = [100,10,1,.1,.01]
 ```
-Kemudian dipanggil pada variabel grid. Setelah itu, model akan dilatih menggunakan grid_search.fit.
+Kemudian dipanggil pada variabel *grid*. Setelah itu, model akan dilatih menggunakan grid_search.fit.
 
 - **Random Forest** – Metode ansambel pohon keputusan, metode non-parametrik yang dapat bekerja lebih baik karena hubungan yang kompleks antara prediktor dan hasil.
 
@@ -116,11 +116,11 @@ Model yang kedua dibuat pada proyek ini ialah *Random Forest*. Tidak jauh beda d
 n_estimators = [10,100,1000]
 max_features = ['sqrt','log2']
 ```
-Setelah hyperparameters didefinisikan, kemudian dipanggil pada variabel *grid*. Lalu model dilatih menggunakan grid_search.fit.
+Setelah *hyperparameters* didefinisikan, kemudian dipanggil pada variabel *grid*. Lalu model dilatih menggunakan grid_search.fit.
 
 - **XGBoost** – Teknik peningkatan gradien adalah teknik aditif (ensemble) yang membangun satu pohon pada satu waktu, belajar dari iterasi sebelumnya. 
 
-Model terakhir yang dibuat pada proyek ini ialah *XGBoost*. Mirip seperti model yang sebelumnya, pada model ini kita menggunakan XGBClassifier() yang disimpan dalam variabel xgb. Model ini juga menggunakan *hyperparameters* dan juga *grid search* sama seperti model sebelumnya, hanya saja *hyperparameters* yang digunakan berbeda. *Hyperparameters* yang didefenisikan ppada model ini ialah:
+Model terakhir yang dibuat pada proyek ini ialah *XGBoost*. Mirip seperti model yang sebelumnya, pada model ini kita menggunakan XGBClassifier() yang disimpan dalam variabel xgb. Model ini juga menggunakan *hyperparameters* dan juga *grid search* sama seperti model sebelumnya, hanya saja *hyperparameters* yang digunakan berbeda. *Hyperparameters* yang didefenisikan pada model ini ialah:
 ```
 eta = [.1,.4,.7,1]
 min_child_weight = [3,6,10]
