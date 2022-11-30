@@ -54,7 +54,7 @@ Melakukan pairplot pada fitur 'Contacts_Count_12_mon', 'Total_Revolving_Bal','To
 
 - **Plot fitur yang paling berkorelasi terhadap variabel y**
 
-Selanjutnya dilakukan plot untuk ketiga prediktor, yaitu pada 'Total_Revolving_Bal', 'Total_Trans_Ct', dan 'Total_Ct_Chng_Q4_Q1' untuk mendapatkan gambaran yang lebih baik tentang distribusi dan hubungan dengan respons. Dari plot tersebut diketahui bahwa terdapatsejumlah besar outlier untuk 'Total_Trans_Ct' dan 'Total_Ct_Chng_Q4_Q1'. Untuk 'Total_Revolving_Balance' diketahui ada penambahan distribusi, dengan mayoritas churner berpusat di sekitar saldo $0.
+Selanjutnya dilakukan plot untuk ketiga prediktor, yaitu pada 'Total_Revolving_Bal', 'Total_Trans_Ct', dan 'Total_Ct_Chng_Q4_Q1' untuk mendapatkan gambaran yang lebih baik tentang distribusi dan hubungan dengan respons. Dari plot tersebut diketahui bahwa terdapat sejumlah besar outlier untuk 'Total_Trans_Ct' dan 'Total_Ct_Chng_Q4_Q1'. Untuk 'Total_Revolving_Balance' diketahui ada penambahan distribusi, dengan mayoritas churner berpusat di sekitar saldo $0.
 
 ![gambar3](https://user-images.githubusercontent.com/99348807/204719862-82284263-ef17-4128-a15b-59c7b2d3aed8.jpg)
 
