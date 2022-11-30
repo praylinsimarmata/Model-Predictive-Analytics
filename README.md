@@ -70,7 +70,7 @@ Pengolahan data dilakukan dalam beberapa tahap yakni:
 
 ![gambar7](https://user-images.githubusercontent.com/99348807/204722878-31d756bd-6d77-4ac8-849d-91d7752e142c.jpg)
 
-- Tahap 2: Setelah data tampil, tahap selanjutnya ialah mengecek ketersediaan isi pada kolom, karena ketika ada missing kolom akan menyebabkan prediksi kurang optimal
+- Tahap 2: Setelah data tampil, tahap selanjutnya ialah mengecek ketersediaan isi pada kolom, karena ketika ada missing kolom akan menyebabkan prediksi kurang optimal. Dan pada dataset ini, kita tidak menemukan missing values.
 
 | Kolom                    | Total Kosong |
 |--------------------------|--------------|
@@ -129,14 +129,16 @@ Di setiap model yang dibuat pada proyek ini menggunakan hyperparameters dan grid
 
 ## Evaluation
 Evaluasi yang dilakukan dalam proyek ini menggunakan F1 Score metric. F1 Score metric dapat diartikan sebagai rata-rata tertimbang dari presisi dan recall, dimana skor F1 mencapai nilai terbaiknya pada 1 dan skor terburuk pada 0. Kontribusi relatif presisi dan recall terhadap skor F1 adalah sama. Rumus untuk skor F1 ialah:
-$F1 = 2 * (precision * recall) / (precision + recall)$
+$F1 = 2 * {{(precision * recall)} \over (precision + recall)}$
 
 F1 sangat relevan untuk masalah ini karena terdapat dampak bisnis yang jelas dalam pertukaran antara presisi dan recall. Metriks inilah yang digunakan untuk melakukan analisis ROI.
 
-Dari ketiga model tersebut, didapat hasil sebagai berikut: 
+Dari ketiga model tersebut, didapat hasil akurasi sebagai berikut: 
 ### Result 
 - Logistic Regression: 0.85
 - Random Forest: 0.96
 - XGBoost: 0.97
 
-Dari hasil tersebut kita dapat mengetahui bahwa model yang paling baik ialah dengan menggunakan XGBoost.
+Dari hasil tersebut kita dapat mengetahui bahwa model yang paling baik ialah dengan menggunakan XGBoost, dengan hasil evaluasi metriks seperti di bawah ini:
+
+![gambar13](https://user-images.githubusercontent.com/99348807/204727726-30c24a8f-301f-4832-82b6-85d844be9e11.jpg)
