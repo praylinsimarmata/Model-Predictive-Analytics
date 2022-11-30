@@ -67,7 +67,7 @@ Pengolahan data dilakukan dalam beberapa tahap yakni:
 
 - Tahap 2 : Menampilkan informasi data dengan menggunakan df.info() untuk melihat jenis data, ketersediaan data setiap kolom, dan jenis jenis colom. Kemudian menggunakan df.describe() untuk mengetahui persebaran data.
 
-- Tahap 3: Setelah data tampil, tahap selanjutnya ialah mengecek ketersediaan isi pada kolom, karena ketika ada missing kolom akan menyebabkan prediksi kurang optimal. Dan pada dataset ini, kita tidak menemukan missing values.
+- Tahap 3: Kemudian tahap selanjutnya ialah mengecek ketersediaan isi pada kolom, karena ketika ada missing kolom akan menyebabkan prediksi kurang optimal. Dan pada dataset ini, kita tidak menemukan missing values.
 
 | Kolom                    | Total Kosong |
 |--------------------------|--------------|
