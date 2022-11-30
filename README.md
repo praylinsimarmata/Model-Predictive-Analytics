@@ -72,11 +72,24 @@ Pengolahan data dilakukan dalam beberapa tahap yakni:
 
 - Tahap 2: Setelah data tampil, tahap selanjutnya ialah mengecek ketersediaan isi pada kolom, karena ketika ada missing kolom akan menyebabkan prediksi kurang optimal
 
-![gambar8](https://user-images.githubusercontent.com/99348807/204722961-5fcbe9ec-8935-4088-966e-0411e7069814.jpg)
+| Kolom                    | Total Kosong |
+|--------------------------|--------------|
+| Customer_Age             |       0      |
+| Dependent_count          |       0      |
+| Months_on_book           |       0      |
+| Total_Relationship_Count |       0      |
+| Months_Inactive_12_mon   |       0      |
+| Contacts_Count_12_mon    |       0      |
+| Credit_Limit             |       0      |
+| Total_Revolving_Bal      |       0      |
+| Avg_Open_To_Buy          |       0      |
+| Total_Amt_Chng_Q4_Q1     |       0      |
+| Total_Trans_Am           |       0      |
+| Total_Trans_Ct           |       0      |
+| Total_Ct_Chng_Q4_Q       |       0      |
+| Avg_Utilization_Ratio    |       0      |
 
 - Tahap 3: Melakukan Normalize/scale features menggunakan robust scaler untuk mempertahankan hubungan outlier
-
-![gambar9](https://user-images.githubusercontent.com/99348807/204723003-3697a300-78f0-44c9-ba4a-a3182972b9bb.jpg)
 
 - Tahap 4: Membagi dataset menjadi training dan test dengan perbandingan 75/25 split, dengan menggunakan code dibawah ini:
 ```
