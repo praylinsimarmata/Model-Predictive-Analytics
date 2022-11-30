@@ -111,7 +111,7 @@ Kemudian dipanggil pada variabel *grid*. Setelah itu, model akan dilatih menggun
 
 - **Random Forest** – Metode ansambel pohon keputusan, metode non-parametrik yang dapat bekerja lebih baik karena hubungan yang kompleks antara prediktor dan hasil.
 
-Model yang kedua dibuat pada proyek ini ialah *Random Forest*. Tidak jauh beda dengan model yang pertama, kita menggunakan RandomForestClassifier() yang disimpan dalam sebuah variabel bernama rf. Model ini juga menggunakan *hyperparameters* dan juga *grid search* sama seperti model sebelumnya, hanya saja *hyperparameters* yang digunakan berbeda. *Hyperparameters* yang didefenisikan ppada model ini ialah:
+Model yang kedua dibuat pada proyek ini ialah *Random Forest*. Tidak jauh beda dengan model yang pertama, kita menggunakan RandomForestClassifier() yang disimpan dalam sebuah variabel bernama rf. Model ini juga menggunakan *hyperparameters* dan juga *grid search* sama seperti model sebelumnya, hanya saja *hyperparameters* yang digunakan berbeda. *Hyperparameters* yang didefenisikan pada model ini ialah:
 ```
 n_estimators = [10,100,1000]
 max_features = ['sqrt','log2']
