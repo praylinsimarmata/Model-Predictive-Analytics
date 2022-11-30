@@ -100,15 +100,15 @@ Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan Logistic Regression, Ra
 
 - Logistic Regression – Dasar untuk pemodelan
 
-![gambar11](https://user-images.githubusercontent.com/99348807/204727710-fbd39707-c4d0-4e69-9cfb-ae6cea56e9e1.jpg)
+![gambar10](https://user-images.githubusercontent.com/99348807/204727721-7ef81e1f-722d-4045-bbf5-550e504c4096.jpg)
 
 - Random Forest – Metode ansambel pohon keputusan, metode non-parametrik yang dapat bekerja lebih baik karena hubungan yang kompleks antara prediktor dan hasil.
 
-![gambar12](https://user-images.githubusercontent.com/99348807/204727718-e97fed87-8d49-455f-9311-9e1e5edacc30.jpg)
+![gambar11](https://user-images.githubusercontent.com/99348807/204727710-fbd39707-c4d0-4e69-9cfb-ae6cea56e9e1.jpg)
 
 - XGBoost – Teknik peningkatan gradien adalah teknik aditif (ensemble) yang membangun satu pohon pada satu waktu, belajar dari iterasi sebelumnya. 
 
-![gambar10](https://user-images.githubusercontent.com/99348807/204727721-7ef81e1f-722d-4045-bbf5-550e504c4096.jpg)
+![gambar12](https://user-images.githubusercontent.com/99348807/204727718-e97fed87-8d49-455f-9311-9e1e5edacc30.jpg)
 
 ![gambar13](https://user-images.githubusercontent.com/99348807/204727726-30c24a8f-301f-4832-82b6-85d844be9e11.jpg)
 
