@@ -101,7 +101,7 @@ Pada proyek ini, pemodelan dilakukan menggunakan algoritma *Logistic Regression*
 **Logistic Regression**
 
 Terdapat beberapa tahap dalam menggunakan algoritma ini, yakni:
-- Tahap 1: Melakukan Import Packages yaitu *Import* model LogisticRegression dari sklearn.linear_model dan *Import* modul metrik dari sklearn yang menyertakan metrik penting yang akan digunakan.
+- Tahap 1: Melakukan Import Packages yaitu *Import* model *LogisticRegression* dari sklearn.linear_model dan *Import* modul metrik dari sklearn yang menyertakan metrik penting yang akan digunakan.
 - Tahap 2: Melakukan pelatihan model, dengan menggunakan variabel reg yang menampung logistic regression. Selain itu, dilakukan penilaian pada akurasi pelatihan model dan mendapat hasil 86.99%.
 - Tahap 3: Melakukan testing pada model serta penilaian terhadap akurasi testing model dan mendapat hasil 85.27%.
 - Tahap 4: Untuk mengukur performa model dalam melakukan prediksi juga digunakan confusion matrix
