@@ -1,21 +1,27 @@
 # Proyek Pertama : Predictive Analytics
 
 ## Domain Proyek
-Bank Customer Churn adalah kehilangan pelanggan dari suatu bank. Churn dihitung dari berapa banyak pelanggan meninggalkan suatu bank dalam waktu tertentu. Bank Customer churn penting diketahui karena merupakan gambaran kesuksesan suatu bank dalam mempertahankan pelanggan. Selain itu, Bank Customer Churn penting untuk dihentikan, karena bank akan mengalami kerugian besar jika kehilangan pelanggannya. Dalam kasus ini, seorang manager di sebuah bank merasa terganggu dengan semakin banyaknya nasabah yang meninggalkan layanan kartu kreditnya. Dan meminta bantuan agar dapat memprediksi pelanggan mana yang ingin berhenti sehingga bank tersebut dapat secara proaktif mengintervensi dan menawarkan layanan dan produk untuk mempertahankan pelanggan, sehingga pada akhirnya dapat mencapai laba atas investasi yang positif bagi bank.
+Bank *Customer Churn* adalah kehilangan pelanggan dari suatu bank. *Churn* dihitung dari berapa banyak pelanggan meninggalkan suatu bank dalam waktu tertentu. Bank *Customer churn* penting diketahui karena merupakan gambaran kesuksesan suatu bank dalam mempertahankan pelanggan. Selain itu, Bank *Customer churn* penting untuk dihentikan, karena bank akan mengalami kerugian besar jika kehilangan pelanggannya. Dalam kasus ini, seorang manager di sebuah bank merasa terganggu dengan semakin banyaknya nasabah yang meninggalkan layanan kartu kreditnya. Dan meminta bantuan agar dapat memprediksi pelanggan mana yang ingin berhenti sehingga bank tersebut dapat secara proaktif mengintervensi dan menawarkan layanan dan produk untuk mempertahankan pelanggan, sehingga pada akhirnya dapat mencapai laba atas investasi yang positif bagi bank.
 
 ## Business Understanding
-
-### Problem Statements
 Seorang manager di bank merasa terganggu dengan semakin banyaknya nasabah yang meninggalkan layanan kartu kreditnya.Dan meminta bantuan agar dapat memprediksi pelanggan mana yang dapat diharapkan untuk berhenti sehingga bank tersebut dapat secara proaktif mengintervensi dan menawarkan layanan dan produk untuk mempertahankan pelanggan, dan pada akhirnya mencapai laba atas investasi yang positif bagi bank.
 
+### Problem Statements
+Pernyataan masalah yang terdapat dalam proyek ini, yakni:
+- Adanya pelanggan yang meninggalkan layanan kartu kreditnya
+- Menarik kembali pelanggan yang ingin berhenti
+- Bagaimana caranya agar dapat mencapai laba atas investasi yang positif bagi bank
+
 ### Goals / Project Summary
+Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
 - Membangun model klasifikasi untuk memprediksi churn nasabah kartu kredit suatu bank.
 - Klasifikasi yang dilakukan menggunakan Optimized Linear Regression, Random Forest, and XGBoost.
 - Melakukan analisis ROI dengan mempertimbangkan LTV atau lifetime value of a customer, nilai dari false positives/negatives, dan nilai dari dan intervensi untuk mempertahankan pelanggan.
 
 ## Data Understanding
 - Dataset diperoleh dari Kaggle:: https://www.kaggle.com/sakshigoyal7/credit-card-customers
-- Dataset ini terdiri dari 10.000 pelanggan dengan 21 fitur, diantaranya: customer age, salary, marital_status, credit card limit, credit card category, dll. Data menggambarkan perilaku pelanggan selama 12 bulan terakhir.
+
+Berikut fitur-fitur yang terdapat pada dataset dan deskripsinya:
 
 ### Exploratory Data Analysis
 #### Correlation heatmap:
