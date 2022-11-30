@@ -116,9 +116,8 @@ Di setiap model yang dibuat pada proyek ini menggunakan hyperparameters dan grid
 
 ## Evaluation
 Evaluasi yang dilakukan dalam proyek ini menggunakan F1 Score metric. F1 Score metric dapat diartikan sebagai rata-rata tertimbang dari presisi dan recall, dimana skor F1 mencapai nilai terbaiknya pada 1 dan skor terburuk pada 0. Kontribusi relatif presisi dan recall terhadap skor F1 adalah sama. Rumus untuk skor F1 ialah:
-```
-F1 = 2 * (precision * recall) / (precision + recall)
-```
+$F1 = 2 * (precision * recall) / (precision + recall)$
+
 F1 sangat relevan untuk masalah ini karena terdapat dampak bisnis yang jelas dalam pertukaran antara presisi dan recall. Metriks inilah yang digunakan untuk melakukan analisis ROI.
 
 Dari ketiga model tersebut, didapat hasil sebagai berikut: 
