@@ -100,6 +100,7 @@ Pengolahan data dilakukan dalam beberapa tahap yakni:
 Pada proyek ini, pemodelan dilakukan menggunakan algoritma *Logistic Regression*. 
 
 **Logistic Regression**
+
 *Logistic Regression* merupakan sebuah model yang digunakan untuk melakukan prediksi apakah sesuatu bernilai benar atau salah (0 atau 1). Dalam hal ini *Logistic Regression* digunakan untuk memprediksi apakah seorang nasabah akan melakukan churn atau tidak. *Logistic Regression* akan mengukur hubungan antara variabel target (yang ingin diprediksi) dan variabel input (fitur yang digunakan) dengan fungsi logistik. Probabilitas akan dihitung menggunakan fungsi *sigmoid* untuk mengubah nilai-nilai tadi menjadi 0 atau 1.
 
 Terdapat beberapa tahap dalam menggunakan algoritma ini, yakni:
