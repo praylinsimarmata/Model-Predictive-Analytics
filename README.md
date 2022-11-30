@@ -111,14 +111,12 @@ $F1 = 2 * {{(precision * recall)} \over (precision + recall)}$
 
 F1 sangat relevan untuk masalah ini karena terdapat dampak bisnis yang jelas dalam pertukaran antara presisi dan recall. Metriks inilah yang digunakan untuk melakukan analisis ROI.
 
-## Conclusion
+### Conclusion
 
 Dari ketiga model tersebut, didapat hasil akurasi sebagai berikut: 
-### Result 
+#### Result 
 - Logistic Regression: 0.85
 - Random Forest: 0.96
 - XGBoost: 0.97
 
-Dari hasil tersebut kita dapat mengetahui bahwa model yang paling baik ialah dengan menggunakan XGBoost, dengan hasil evaluasi metriks seperti di bawah ini:
-
-![gambar13](https://user-images.githubusercontent.com/99348807/204727726-30c24a8f-301f-4832-82b6-85d844be9e11.jpg)
+Dari hasil tersebut kita dapat mengetahui bahwa model yang paling baik ialah dengan menggunakan XGBoost.
