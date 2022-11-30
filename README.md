@@ -111,19 +111,19 @@ x_train.shape
 ## Modeling 
 Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan Logistic Regression, Random Forest, dan juga XG Boost.
 
-- Logistic Regression – Dasar untuk pemodelan
+- **Logistic Regression** – Dasar untuk pemodelan
 
 Pada proyek ini, model yang pertama dibuat ialah model Logistic Regression. Pada pembuatan model ini digunakan RandomForestClassifier() yang disimpan dalam variabel reg. Model ini juga menggunakan hyperparameters dan juga grid search untuk menemukan parameter terbaik yang akan digunakan saat modeling. Langkahnya ialah pertama hyperparameters didefinisikan terlebih dahulu, kemudian dipanggil pada variabel grid. Setelah itu, model dilatih pada variabel fit. 
 
 ![gambar10](https://user-images.githubusercontent.com/99348807/204727721-7ef81e1f-722d-4045-bbf5-550e504c4096.jpg)
 
-- Random Forest – Metode ansambel pohon keputusan, metode non-parametrik yang dapat bekerja lebih baik karena hubungan yang kompleks antara prediktor dan hasil.
+- **Random Forest** – Metode ansambel pohon keputusan, metode non-parametrik yang dapat bekerja lebih baik karena hubungan yang kompleks antara prediktor dan hasil.
 
 Model yang kedua dibuat pada proyek ini ialah Random Forest. Tidak jauh beda dengan model yang pertama, kita menggunakan RandomForestClassifier() yang disimpan dalam sebuah variabel bernama rf. Model ini juga menggunakan hyperparameters dan juga grid search sama seperti model sebelumnya, hanya saja hyperparameter yang digunakan berbeda. Setelah hyperparameters didefinisikan, kemudian dipanggil pada variabel grid. Lalu model dilatih pada variabel fit. 
 
 ![gambar11](https://user-images.githubusercontent.com/99348807/204727710-fbd39707-c4d0-4e69-9cfb-ae6cea56e9e1.jpg)
 
-- XGBoost – Teknik peningkatan gradien adalah teknik aditif (ensemble) yang membangun satu pohon pada satu waktu, belajar dari iterasi sebelumnya. 
+- **XGBoost** – Teknik peningkatan gradien adalah teknik aditif (ensemble) yang membangun satu pohon pada satu waktu, belajar dari iterasi sebelumnya. 
 
 Model terakhir yang dibuat pada proyek ini ialah XGBoost. Mirip seperti model yang sebelumnya, pada model ini kita menggunakan XGBClassifier() yang disimpan dalam variabel xgb. Model ini juga menggunakan hyperparameters dan juga grid search sama seperti model sebelumnya, hanya saja hyperparameter yang digunakan berbeda. Setelah hyperparameters didefinisikan, kemudian dipanggil pada variabel grid. Lalu model dilatih pada variabel fit.
 
