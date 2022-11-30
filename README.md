@@ -62,13 +62,14 @@ Tiga variabel yang paling berkorelasi dengan respons adalah 'Total_Revolving_Bal
 
 - **Rata-rata jumlah transaksi tahunan untuk churner dan non-churner**
 
-![gambar6](https://user-images.githubusercontent.com/99348807/204721062-12ee05f1-f209-43f0-8510-b692e4098c01.jpg)
+| y | Total_Trans_Amt | Months_on_book |
+|---|-----------------|----------------|
+| 0 | 4654.655882     | 35.880588      |
+| 1 | 3095.025814     | 36.178242      |
 
 ## Data Preparation / Data Preprocessing
 Pengolahan data dilakukan dalam beberapa tahap yakni: 
 - Tahap 1: Melakukan Load Data dan Menampilkan Data
-
-![gambar7](https://user-images.githubusercontent.com/99348807/204722878-31d756bd-6d77-4ac8-849d-91d7752e142c.jpg)
 
 - Tahap 2: Setelah data tampil, tahap selanjutnya ialah mengecek ketersediaan isi pada kolom, karena ketika ada missing kolom akan menyebabkan prediksi kurang optimal. Dan pada dataset ini, kita tidak menemukan missing values.
 
@@ -92,21 +93,8 @@ Pengolahan data dilakukan dalam beberapa tahap yakni:
 - Tahap 3: Melakukan Normalize/scale features menggunakan robust scaler untuk mempertahankan hubungan outlier
 
 - Tahap 4: Membagi dataset menjadi training dan test dengan perbandingan 75/25 split, dengan menggunakan code dibawah ini:
-```
-from sklearn.model_selection import train_test_split
-
-X = X.drop(columns='y')
-x_train, x_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 12)
-x_train.shape
-```
 
 - Tahap 5: Oversample minor class pada training set untuk menyeimbangkan kelas, dengan menggunakan code dibawah ini:
-```
-from imblearn.over_sampling import SMOTE
-sm = SMOTE(random_state=12)
-x_train, y_train = sm.fit_resample(x_train, y_train)
-x_train.shape 
-```
 
 ## Modeling 
 Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan Logistic Regression, Random Forest, dan juga XG Boost.
@@ -115,27 +103,21 @@ Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan Logistic Regression, Ra
 
 Pada proyek ini, model yang pertama dibuat ialah model Logistic Regression. Pada pembuatan model ini digunakan RandomForestClassifier() yang disimpan dalam variabel reg. Model ini juga menggunakan hyperparameters dan juga grid search untuk menemukan parameter terbaik yang akan digunakan saat modeling. Langkahnya ialah pertama hyperparameters didefinisikan terlebih dahulu, kemudian dipanggil pada variabel grid. Setelah itu, model dilatih pada variabel fit. 
 
-![gambar10](https://user-images.githubusercontent.com/99348807/204727721-7ef81e1f-722d-4045-bbf5-550e504c4096.jpg)
-
 - **Random Forest** – Metode ansambel pohon keputusan, metode non-parametrik yang dapat bekerja lebih baik karena hubungan yang kompleks antara prediktor dan hasil.
 
 Model yang kedua dibuat pada proyek ini ialah Random Forest. Tidak jauh beda dengan model yang pertama, kita menggunakan RandomForestClassifier() yang disimpan dalam sebuah variabel bernama rf. Model ini juga menggunakan hyperparameters dan juga grid search sama seperti model sebelumnya, hanya saja hyperparameter yang digunakan berbeda. Setelah hyperparameters didefinisikan, kemudian dipanggil pada variabel grid. Lalu model dilatih pada variabel fit. 
 
-![gambar11](https://user-images.githubusercontent.com/99348807/204727710-fbd39707-c4d0-4e69-9cfb-ae6cea56e9e1.jpg)
-
 - **XGBoost** – Teknik peningkatan gradien adalah teknik aditif (ensemble) yang membangun satu pohon pada satu waktu, belajar dari iterasi sebelumnya. 
 
 Model terakhir yang dibuat pada proyek ini ialah XGBoost. Mirip seperti model yang sebelumnya, pada model ini kita menggunakan XGBClassifier() yang disimpan dalam variabel xgb. Model ini juga menggunakan hyperparameters dan juga grid search sama seperti model sebelumnya, hanya saja hyperparameter yang digunakan berbeda. Setelah hyperparameters didefinisikan, kemudian dipanggil pada variabel grid. Lalu model dilatih pada dengan menjalankan perintah fit.
-
-![gambar12](https://user-images.githubusercontent.com/99348807/204727718-e97fed87-8d49-455f-9311-9e1e5edacc30.jpg)
-
-![gambar13](https://user-images.githubusercontent.com/99348807/204727726-30c24a8f-301f-4832-82b6-85d844be9e11.jpg)
 
 ## Evaluation
 Evaluasi yang dilakukan dalam proyek ini menggunakan F1 Score metric. F1 Score metric dapat diartikan sebagai rata-rata tertimbang dari presisi dan recall, dimana skor F1 mencapai nilai terbaiknya pada 1 dan skor terburuk pada 0. Kontribusi relatif presisi dan recall terhadap skor F1 adalah sama. Rumus untuk skor F1 ialah:
 $F1 = 2 * {{(precision * recall)} \over (precision + recall)}$
 
 F1 sangat relevan untuk masalah ini karena terdapat dampak bisnis yang jelas dalam pertukaran antara presisi dan recall. Metriks inilah yang digunakan untuk melakukan analisis ROI.
+
+## Conclusion
 
 Dari ketiga model tersebut, didapat hasil akurasi sebagai berikut: 
 ### Result 
