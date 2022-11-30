@@ -126,7 +126,7 @@ eta = [.1,.4,.7,1]
 min_child_weight = [3,6,10]
 max_depth = [.1,1,5,10]
 ```
-Setelah *hyperparameters* didefinisikan, kemudian dipanggil pada variabel *grid*. Lalu model dilatih menggunakan grid_search.fit. Algortitma XGBoost ini menggunakan proses pra-filter dan berbasis histogram untuk menemukan nilai pemisah terbaik.
+Setelah *hyperparameters* didefinisikan, kemudian dipanggil pada variabel *grid*. Lalu model dilatih menggunakan grid_search.fit. Algortitma XGBoost ini menggunakan proses pra-filter dan berbasis histogram untuk menemukan nilai pemisah terbaik. Sehingga dapat memprediksi apakah seorang pelanggan akan melakukan churn atau tidak.
 
 ## Evaluation
 Evaluasi yang dilakukan dalam proyek ini menggunakan *F1 Score metric*. *F1 Score metric* dapat diartikan sebagai rata-rata tertimbang dari presisi dan *recall*, dimana skor F1 mencapai nilai terbaiknya pada 1 dan skor terburuk pada 0. Kontribusi relatif presisi dan *recall* terhadap skor F1 adalah sama. Rumus untuk skor F1 ialah:
