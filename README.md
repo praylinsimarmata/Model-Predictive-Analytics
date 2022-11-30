@@ -60,7 +60,7 @@ Tiga variabel yang paling berkorelasi dengan respons adalah 'Total_Revolving_Bal
 
 ![gambar5](https://user-images.githubusercontent.com/99348807/204720208-451dbd19-82e1-4c84-a162-d0caaf2ba2d8.jpg)
 
-- Rata-rata jumlah transaksi tahunan untuk churner dan non-churner
+- **Rata-rata jumlah transaksi tahunan untuk churner dan non-churner**
 
 ![gambar6](https://user-images.githubusercontent.com/99348807/204721062-12ee05f1-f209-43f0-8510-b692e4098c01.jpg)
 
