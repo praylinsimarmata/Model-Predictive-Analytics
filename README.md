@@ -15,8 +15,8 @@ Pernyataan masalah yang terdapat dalam proyek ini, yakni:
 ### Goals / Project Summary
 Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
 - Membangun model klasifikasi untuk memprediksi churn nasabah kartu kredit suatu bank.
-- Klasifikasi yang dilakukan menggunakan *Optimized Linear Regression*, *Random Forest*, and *XGBoost*.
-- Menentukan model terbaik yang akan digunakan.
+- Klasifikasi yang dilakukan menggunakan *Optimized Linear Regression*.
+- Memperoleh hasil akurasi yang baik.
 
 ## Data Understanding
 - Dataset ini diperoleh dari Kaggle: https://www.kaggle.com/sakshigoyal7/credit-card-customers
@@ -97,51 +97,23 @@ Pengolahan data dilakukan dalam beberapa tahap yakni:
 - Tahap 6: Oversample minor class pada training set untuk menyeimbangkan kelas.
 
 ## Modeling 
-Pada proyek ini, dilakukan 3 pemodelan yakni menggunakan *Logistic Regression*, *Random Forest*, dan juga *XGBoost*.
+Pada proyek ini, pemodelan dilakukan menggunakan algoritma *Logistic Regression*.
 
-- **Logistic Regression** – Dasar untuk pemodelan
+**Logistic Regression**
 
-Pada proyek ini, model yang pertama dibuat ialah model *Logistic Regression*. *Logistic Regression* ialah salah satu jenis pemodelan yang digunakan untuk melakukan prediksi apakah sesuatu bernilai benar atau salah. Dalam hal ini kita ingin melakukan prediksi apakah seorang pelanggan akan melakukan churn atau tidak. Algoritma ini bekerja dengan cara menjalankan fungsi LogisticRegression() serta *hyperparameters* yang ditampung di dalam *grid search*. *GridSearch* akan melakukan validasi terhadap model dan juga *hyperparameters* masing-masing secara otomatis dan sistematis. Dalam algoritma ini, *Hyperparameters* yang digunakan ialah:
-```
-solvers = ['newton-cg','lbfgs','liblinear']
-penalty = ['l1','l2']
-c = [100,10,1,.1,.01]
-```
-Dengan menggunakan *GridSearch* nantinya akan dipilih parameter yang terbaik yang akan digunakan dan akan dilatih menggunakan grid_search.fit.
+Terdapat beberapa tahap dalam menggunakan algoritma ini, yakni:
+- Tahap 1: Melakukan Import Packages yaitu *Import* model LogisticRegression dari sklearn.linear_model dan *Import* modul metrik dari sklearn yang menyertakan metrik penting yang akan digunakan.
+- Tahap 2: Melakukan pelatihan model, dengan menggunakan variabel reg yang menampung logistic regression. Selain itu, dilakukan, penilaian pada akurasi pelatihan model.
+- Tahap 3: Melakukan testing pada model serta penilaian terhadap akurasi testing model.
+- Tahap 4: 
 
-- **Random Forest** – Metode ansambel pohon keputusan, metode non-parametrik yang dapat bekerja lebih baik karena hubungan yang kompleks antara prediktor dan hasil.
 
-Model yang kedua dibuat pada proyek ini ialah *Random Forest*. *Random Forest* merupakan salah satu algoritma dalam *Decision Tree* yang nantinya algoritma ini akan melakukan prediksi apakah seorang pelanggan akan melakukan churn atau tidak. Algoritma ini bekerja dengan cara menjalankan fungsi RandomForestClassifier() serta *hyperparameters* yang ditampung di dalam *grid search*. *GridSearch* akan melakukan validasi terhadap model dan juga *hyperparameters* masing-masing secara otomatis dan sistematis. Dalam algoritma ini, *Hyperparameters* yang digunakan ialah:
-```
-n_estimators = [10,100,1000]
-max_features = ['sqrt','log2']
-```
-Dengan menggunakan *GridSearch* nantinya akan dipilih parameter yang terbaik yang akan digunakan dan akan dilatih menggunakan grid_search.fit.
-
-- **XGBoost** – Teknik peningkatan gradien adalah teknik aditif (ensemble) yang membangun satu pohon pada satu waktu, belajar dari iterasi sebelumnya. 
-
-Model terakhir yang dibuat pada proyek ini ialah *XGBoost*. Algoritma ini bekerja dengan cara menjalankan fungsi XGBClassifier() serta *hyperparameters* yang ditampung di dalam *grid search*. *GridSearch* akan melakukan validasi terhadap model dan juga *hyperparameters* masing-masing secara otomatis dan sistematis. Dalam algoritma ini, *Hyperparameters* yang digunakan ialah:
-```
-eta = [.1,.4,.7,1]
-min_child_weight = [3,6,10]
-max_depth = [.1,1,5,10]
-```
-Setelah *hyperparameters* didefinisikan, kemudian dipanggil pada variabel *grid*. Lalu model dilatih menggunakan grid_search.fit. Algortitma XGBoost ini menggunakan proses pra-filter dan berbasis histogram untuk menemukan nilai pemisah terbaik. Sehingga dapat memprediksi apakah seorang pelanggan akan melakukan churn atau tidak.
 
 ## Evaluation
 Evaluasi yang dilakukan dalam proyek ini menggunakan *F1 Score metric*. *F1 Score metric* dapat diartikan sebagai rata-rata tertimbang dari presisi dan *recall*, dimana skor F1 mencapai nilai terbaiknya pada 1 dan skor terburuk pada 0. Kontribusi relatif presisi dan *recall* terhadap skor F1 adalah sama. Rumus untuk skor F1 ialah:
 $F1 = 2 * {{(precision * recall)} \over (precision + recall)}$
 
-F1 sangat relevan untuk masalah ini karena terdapat dampak bisnis yang jelas dalam pertukaran antara presisi dan recall. Metriks inilah yang digunakan untuk melakukan analisis ROI.
+F1 sangat relevan untuk masalah ini karena terdapat dampak bisnis yang jelas dalam pertukaran antara presisi dan recall.
 
 ### Conclusion
 
-Dari ketiga model tersebut, didapat hasil akurasi sebagai berikut: 
-#### Result 
-| Model               | Result |
-|---------------------|--------|
-| Logistic Regression | 0.85   |
-| Random Forest       | 0.96   |
-| XGBoost             | 0.97   |
-
-Dari hasil tersebut kita dapat mengetahui bahwa model yang paling baik ialah dengan menggunakan *XGBoost*.
