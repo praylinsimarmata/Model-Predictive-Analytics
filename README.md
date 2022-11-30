@@ -16,7 +16,7 @@ Pernyataan masalah yang terdapat dalam proyek ini, yakni:
 Menjelaskan tujuan proyek yang akan menjawab pernyataan masalah:
 - Membangun model klasifikasi untuk memprediksi churn nasabah kartu kredit suatu bank.
 - Melalui hasil prediksi, bank akan dapat memfokuskan promo kepada nasabah yang akan churn.
-- Klasifikasi yang dilakukan menggunakan *Optimized Linear Regression*.
+- Klasifikasi yang dilakukan menggunakan *Logistic Regression*.
 
 ## Data Understanding
 - Dataset ini diperoleh dari Kaggle: https://www.kaggle.com/sakshigoyal7/credit-card-customers
